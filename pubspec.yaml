@@ -1,0 +1,98 @@
+name: shop_shoes
+description: "Buy the Fit For your Feet"
+
+publish_to: "none"
+
+version: 1.0.0
+
+environment:
+  sdk: ">=3.3.1 <4.0.0"
+
+  # ---------PACKGES START--------------
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Utility Packages
+  firebase_core: ^2.29.0
+  cloud_firestore: ^4.16.1
+  http: ^1.1.0
+  intl: ^0.18.1
+  logger: ^2.0.1
+  url_launcher: ^6.1.12
+  flutter_native_splash: ^2.4.0
+  smooth_page_indicator: ^1.1.0
+
+  # Icons
+  iconsax: ^0.0.8
+  cupertino_icons: ^1.0.6
+
+  # State Management
+  get: ^4.6.6
+  get_storage: ^2.1.1
+
+  # Product Specific
+  
+
+  # ---------PACKGES END--------------
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/logos/
+    - assets/icons/brands/
+    - assets/images/on_boarding_images/
+    - assets/images/animations/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Italic.ttf
+          style: italic
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-MediumItalic.ttf
+          weight: 300
+          style: italic
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-BoldItalic.ttf
+          weight: 700
+          style: italic
+    - family: Coolvetica
+      fonts:
+        - asset: assets/fonts/coolvetica_regular_italic.otf
+          weight: 500
+        - asset: assets/fonts/coolvetica_regular_italic.otf
+          weight: 500
+          style: italic
+
+flutter_native_splash:
+    color: "#FFFFFF"
+    color_dark: "#272727"
+    image: assets/logos/shop-shoes-light.png
+    image_dark: assets/logos/shop-shoes-dark.png
+
+    android_12:
+      color: "#FFFFFF"
+      color_dark: "#272727"
+      image: assets/logos/shop-shoes-light.png
+      image_dark: assets/logos/shop-shoes-dark.png
+    
+    web: false
+    
